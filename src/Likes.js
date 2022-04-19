@@ -6,8 +6,8 @@ import { PLUSLIKES, MINUSLIKES } from './redux/actions'
 function Likes(props) {
 	return (
 		<div className='button-controls'>
-			<button onClick={props.LikePlus}>+ {props.likes}</button>
-			<button onClick={props.LikeMinus}>-</button>
+			<button onClick={props.LikePlus}>Like+ {props.likes}</button>
+			<button onClick={props.LikeMinus}>Like-</button>
 		</div>
 	)
 }
