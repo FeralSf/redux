@@ -1,7 +1,11 @@
 import React from 'react'
 
 const LikesF = () => {
-	return <div>дщfkfykgkjkyл</div>
+	return <div>jghvjklhghjglgh</div>
+	return <div>jghvjklhghjglgh</div>
+	return <div>jghvjklhghjglgh</div>
+	return <div>jghvjklhghjglgh</div>
+	return <div>jghvjklhghjglgh</div>
 }
 
 export default LikesF
