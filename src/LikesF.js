@@ -7,6 +7,12 @@ const LikesF = () => {
 			<div>LikesF</div>
 			<div>LikesF</div>
 			<div>LikesF</div>
+			<div>LikesF</div>
+			<div>LikesF</div>
+			<div>LikesF</div>
+			<div>LikesF</div>
+			<div>LikesF</div>
+			<div>LikesF</div>
 		</div>
 	)
 }
