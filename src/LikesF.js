@@ -1,20 +1,7 @@
 import React from 'react'
 
 const LikesF = () => {
-	return (
-		<div>
-			LikesF<div>LikesF</div>
-			<div>LikesF</div>
-			<div>LikesF</div>
-			<div>LikesF</div>
-			<div>LikesF</div>
-			<div>LikesF</div>
-			<div>LikesF</div>
-			<div>LikesF</div>
-			<div>LikesF</div>
-			<div>LikesF</div>
-		</div>
-	)
+	return <div>дщл</div>
 }
 
 export default LikesF
