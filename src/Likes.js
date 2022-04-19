@@ -1,36 +1,29 @@
 import { connect } from 'react-redux'
-// import store from './redux/store'
+// import { likesReducer } from './redux/likesReducer'
+import { likesReducer } from './redux/likesReducer'
+import { PLUSLIKES, MINUSLIKES } from './redux/actions'
 
 function Likes(props) {
 	return (
 		<div className='button-controls'>
-			<button onClick={props.LikePlus}>PLUSSSSSSss {props.likes}</button>
-			<button onClick={props.LikeMinus}>MINUS</button>
+			<button onClick={props.LikePlus}>+ {props.likes}</button>
+			<button onClick={props.LikeMinus}>-</button>
 		</div>
 	)
 }
 
 function mapStateToProps(state) {
 	console.log('mapStateToProps > ', state)
-	const { likes } = state
-	console.log('что это', likes)
+	const { likesReducer } = state
 	return {
-		likes: likes.likes,
+		likes: likesReducer.likes,
 	}
 }
 
 function mapDispatchToProps(dispatch) {
 	return {
-		LikePlus: () => {
-			console.log('click')
-			const action = { type: 'PLUS' }
-			dispatch(action)
-		},
-		LikeMinus: () => {
-			console.log('click')
-			const action = { type: 'MINUS' }
-			dispatch(action)
-		},
+		LikePlus: () => dispatch(PLUSLIKES()),
+		LikeMinus: () => dispatch(MINUSLIKES()),
 	}
 }
 
